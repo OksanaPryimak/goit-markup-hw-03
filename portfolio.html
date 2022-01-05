@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -13,6 +16,7 @@
 </head>
 <body>
     <header class="header">
+        <div class="container header-container">
         <a class="header-logo link" lang="en" href=""><span class="header-logo-web">Web</span>Studio</a>
         <nav class="header-menu">
             <ul class="header-list list">
@@ -27,19 +31,24 @@
                 </li>
             </ul>
         </nav>
-        <ul class="header-list2 list">
+        <div class="header-connect">
+         <ul class="header-list list">
             <li><a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
+        </div>
     </header>
     <main>
        <section class="portfolio-menu">
-           <ul class="portfolio-menu-list list">
-              <li><button class="portfolio-menu-button1" type="button">Все</button></li> 
-              <li><button class="portfolio-menu-button" type="button">Веб-сайты</button></li>
-              <li><button class="portfolio-menu-button" type="button">Приложения</button></li>
-              <li><button class="portfolio-menu-button" type="button">Дизайн</button></li>
-              <li><button class="portfolio-menu-button" type="button">Маркетинг</button></li>
+        <div class="container">
+           <h2 class="visually-hidden">Портфолио</h2>
+            <ul class="portfolio-menu-list list">
+              <li class="prt-btn"><button class="portfolio-menu-button1" type="button">Все</button></li> 
+              <li class="prt-btn"><button class="portfolio-menu-button" type="button">Веб-сайты</button></li>
+              <li class="prt-btn"><button class="portfolio-menu-button" type="button">Приложения</button></li>
+              <li class="prt-btn"><button class="portfolio-menu-button" type="button">Дизайн</button></li>
+              <li class="prt-btn"><button class="portfolio-menu-button" type="button">Маркетинг</button></li>
            </ul>
            <ul class="portfolio-list list">
                <li class="portfolio-img">
@@ -115,9 +124,11 @@
                    <p class="portfolio-list-item">Приложение</p>
                 </li>
            </ul>
+        </div>
        </section>
     </main>
 <footer class="footer">
+    <div class="container">
     <a class="footer-logo link" lang="en" href=""><span class="footer-logo-web">Web</span>Studio</a>
     <a class="footer-address link" ddress>
         <ul class="footer-list list">
@@ -133,6 +144,7 @@
             </li>
         </ul>
     </address>
+    </div>
 </footer>
 </body>
 </html>

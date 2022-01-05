@@ -9,15 +9,75 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 /*------- header-------- */
-
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-list {
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-connect {
+  margin-left: auto;
+}
+.header-logo {
+  margin-right: 93px;
+}
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -46,7 +106,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--address-color);
 }
-
+.header-tel {
+  margin-left: 50px;
+}
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -66,17 +128,24 @@ body {
 
 /* -----------Main---------- */
 .main {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
 }
+
 .main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 30px;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 .main-button {
   background-color: var(--accent-color);
@@ -86,6 +155,14 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-color);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: none;
 }
 .main-button:hover,
 .main-button:focus {
@@ -93,12 +170,25 @@ body {
 }
 
 /* Main item */
+.main-item {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: -30px;
+}
+.container-main-list {
+  display: flex;
+}
+.main-list {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
 .main-list-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 .main-list-item {
   font-weight: 400;
@@ -109,20 +199,38 @@ body {
 }
 
 /* Main about */
+.main-about {
+  padding-bottom: 92px;
+}
 .main-about-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 50px;
+}
+.main-about-photo {
+  display: flex;
+  margin-left: -30px;
+}
+.main-photo-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
 }
 /* Main employee */
+.main-employee {
+  padding-bottom: 61px;
+  padding-top: 94px;
+  background: #e5e5e5;
+}
 .main-employee-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 50px;
 }
 .main-employee-name {
   font-weight: 500;
@@ -140,10 +248,31 @@ body {
   letter-spacing: 0.03em;
   color: var(--address-color);
 }
+.main-employee-list {
+  display: flex;
+  margin-left: -30px;
+}
+.main-employee-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.main-employee-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.main-employee-position {
+  margin-bottom: 30px;
+}
 
 /* --------Footer-------- */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -153,6 +282,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
+
 .footer-logo-web {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -161,7 +291,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-
+.footer-list {
+  margin-top: 20px;
+}
 .footer-maps {
   font-weight: 400;
   font-size: 14px;
@@ -196,7 +328,7 @@ body {
 .footer-mail:focus {
   color: rgb(252, 252, 252);
 }
-
+/* --------Portfolio menu =---------*/
 .portfolio-menu-button1 {
   background-color: var(--accent-color);
   font-family: inherit;
@@ -205,6 +337,14 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--white-color);
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .portfolio-menu-button {
   background-color: #f5f4fa;
@@ -214,18 +354,41 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  border-radius: 4px;
+  border: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .portfolio-menu-button:hover,
 .portfolio-menu-button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
+
+.portfolio-menu {
+  padding-top: 96px;
+  padding-bottom: 112px;
+}
+.portfolio-menu-list {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+.prt-btn {
+  margin-left: 8px;
+}
+
 /*------ Portfolio list-------- */
 .portfolio-list-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
 }
 .portfolio-list-item {
   font-weight: 400;
@@ -233,4 +396,18 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--address-color);
+  margin-left: 24px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.portfolio-img {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
 }
