@@ -125,6 +125,10 @@ img {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
+.line {
+  border-bottom: 1px solid #ececec;
+  width: 1600px;
+}
 
 /* -----------Main---------- */
 .main {
@@ -239,6 +243,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 .main-employee-position {
   font-weight: 400;
@@ -260,12 +265,9 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.main-employee-name {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-.main-employee-position {
-  margin-bottom: 30px;
+.div-main-eployee {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* --------Footer-------- */
@@ -292,7 +294,7 @@ img {
   color: var(--accent-color);
 }
 .footer-list {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 .footer-maps {
   font-weight: 400;
@@ -327,6 +329,9 @@ img {
 .footer-mail:hover,
 .footer-mail:focus {
   color: rgb(252, 252, 252);
+}
+.footer-item-mar {
+  margin-bottom: 9px;
 }
 /* --------Portfolio menu =---------*/
 .portfolio-menu-button1 {
@@ -369,11 +374,11 @@ img {
 
 .portfolio-menu {
   padding-top: 96px;
-  padding-bottom: 112px;
+  padding-bottom: 94px;
 }
 .portfolio-menu-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .prt-btn {
@@ -386,9 +391,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-left: 24px;
 }
 .portfolio-list-item {
   font-weight: 400;
@@ -396,7 +399,11 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--address-color);
-  margin-left: 24px;
+}
+.div-portfolo-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 .portfolio-list {
   display: flex;
