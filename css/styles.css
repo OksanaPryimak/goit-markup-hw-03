@@ -294,7 +294,7 @@ img {
   color: var(--accent-color);
 }
 .footer-list {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .footer-maps {
   font-weight: 400;
